@@ -1,9 +1,3 @@
-<<<<<<< HEAD
-# Proyecto 3_ del curso de Base de datos II
-# Face Recognition
-
-<img src="https://upload.wikimedia.org/wikipedia/commons/7/7a/UTEC.jpg" width="200">
-=======
 # Proyecto 3 del curso de Base de datos II
 # Face Recognition
 
@@ -58,7 +52,7 @@ Debido a la cantidad de datos (casi 13000 imágenes), este proceso se realiza en
 
 Luego, realizamos un procesamiento de los vectores para determinar la distribución de distancias entre ellos en el archivo ~ `processing.py`. Para esto, se escoge un par de vectores aleatorios y se calcula la distancia entre ellos, esta operación se realiza unas 5000 veces, y el histograma obtenido es el siguiente.
 
-<img src="src/grafico1.png" width="800">
+<img src="src/graf/1.png" width="800">
 
 ## Indexación de vectores característicos
 Con la información obtenida, implementaremos nuestra clase Comparator.py, el cual implementará las funciones necesarias para obtener la información, así como su indexación con un RTree. En el constructor cargamos dos diccionarios:
@@ -79,11 +73,11 @@ La búsqueda KNN utiliza un priority queue y retorna los K vecinos más cercanos
 La búsqueda por rango en el RTree requiere de dos puntos que representan un MBR, y retorna los puntos que se encuentren en él. Para adaptarlo a nuestra implementación, debemos crear este MBR a partir del vector característico de búsqueda, sumando y restando el radio a sus 128 dimensiones. Luego, cuando retorne los resultados, debemos descartar los que se encuentren fuera del radio de cobertura, además de ordenarlo por distancia ya que no los trae ordenados.
 
 <p float="left">
-  <img src="src/grafico2.png" width="342" />
-  <img src="src/grafico21.png" width="300" /> 
+  <img src="src/graf/2.png" width="342" />
+  <img src="src/graf/21.png" width="300" /> 
 </p>
 
 La búsqueda KNN en el RTree funciona como se espera, por lo que no es necesario realizar alguna modificación como con la búsqueda por rango.
 
 
->>>>>>> 1abf9d3828e2bd0e25e84ab05e327bd3ccfdd57d
+
