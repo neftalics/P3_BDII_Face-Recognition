@@ -73,7 +73,7 @@ La búsqueda KNN utiliza un priority queue y retorna los K vecinos más cercanos
 La búsqueda por rango en el RTree requiere de dos puntos que representan un MBR, y retorna los puntos que se encuentren en él. Para adaptarlo a nuestra implementación, debemos crear este MBR a partir del vector característico de búsqueda, sumando y restando el radio a sus 128 dimensiones. Luego, cuando retorne los resultados, debemos descartar los que se encuentren fuera del radio de cobertura, además de ordenarlo por distancia ya que no los trae ordenados.
 
 <p float="left">
-  <img src="src/graf/2.png" width="342" />
+  <img src="src/graf/2.png" width="300" />
   <img src="src/graf/21.png" width="300" /> 
 </p>
 
