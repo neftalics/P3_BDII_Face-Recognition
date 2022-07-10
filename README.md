@@ -74,7 +74,7 @@ La búsqueda por rango en el RTree requiere de dos puntos que representan un MBR
 
 <p float="left">
   <img src="src/graf/2.png" width="300" />
-  <img src="src/graf/21.png" width="280" /> 
+  <img src="src/graf/21.png" width="300" /> 
 </p>
 
 La búsqueda KNN en el RTree funciona como se espera, por lo que no es necesario realizar alguna modificación como con la búsqueda por rango.
