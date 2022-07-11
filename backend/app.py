@@ -79,6 +79,6 @@ def uploader():
 
 if __name__ == '__main__':
     comparator = Comparator(13174)
-    app.run(debug=True, port=5050)
+    app.run(debug=False, port=5050)
     app.add_url_rule('/favicon.ico',
                 redirect_to=url_for('static', filename='frontend/src/logoico.png'))
