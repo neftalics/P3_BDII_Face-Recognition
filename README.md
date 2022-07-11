@@ -99,4 +99,92 @@ Se utilizó para la previsualización de la imagen al momento de elegir una para
 # Experimentación
 Para testear las implementaciones, se usa una imagen de Steve Jobs como query. Instanciamos la clase Comparator con la cantidad de imágenes que deseamos procesar. Mientras más bajo sea el número de imágenes, menos parecidas serán las fotos. Por ejemplo, para 100 imágenes, los resultados son los siguientes:
 
+Steve Jobs           |  Bob_Huggins_0001.jpg | Paul_Wolfowitz_0003.jpg | Rick_Wagoner_0002.jpg 
+:-------------------------:|:-------------------------: |:-------------------------: |:-------------------------:
+<img src="src/steve_jobs.png" width="300" /> |  <img src="src/Bob_Huggins_0001.png" width="300" />  | <img src="src/Paul_Wolfowitz_0003.png" width="250" /> | <img src="src/Rick_Wagoner_0002.png" width="220" />
+
+Mientras que, para la totalidad de datos (13174), los resultados son:
+
+Steve Jobs           |  John_Sununu_0001.jpg | Bob_Beauprez_0001.jpg | George_W_Bush_0071.jpg
+:-------------------------:|:-------------------------: |:-------------------------: |:-------------------------:
+<img src="src/steve_jobs.png" width="300" /> |  <img src="src/John_Sununu_0001.png" width="300" />  | <img src="src/Bob_Beauprez_000.png" width="250" /> | <img src="src/George_W_Bush_0071.png" width="220" />
+
+## Búsqueda KNN
+
+<table>
+    <thead>
+        <tr>
+            <th></th>
+            <th >K = 8</th>
+            <th></th>
+        </tr>
+        <tr>
+            <th></th>
+            <th>KNN RTree</th>
+            <th>KNN Secuencial</th>
+        </tr>
+    </thead>
+    <tbody>
+        <tr>
+            <td >N = 100</td>
+            <td >0.89</td>
+            <td>2.52</td>
+        </tr>
+        <tr>
+            <td>N = 200</td>
+            <td>0.82 </td>
+            <td>3.82</td>
+        </tr>
+        <tr>
+            <td >N = 400</td>
+            <td>1.68</td>
+            <td>9.11</td>
+        </tr>
+        <tr>
+            <td>N = 800</td>
+            <td>3.47</td>
+            <td>15.74</td>
+        </tr>
+        <tr>
+            <td>N = 1600</td>
+            <td>6.54</td>
+            <td>36.04</td>
+        </tr>
+        <tr>
+            <td>N = 3200</td>
+            <td>14.17</td>
+            <td>62.24</td>
+        </tr>
+        <tr>
+            <td>N = 6400</td>
+            <td>34.35</td>
+            <td>116.52</td>
+        </tr>
+        <tr>
+            <td>N = 12800</td>
+            <td>63.55</td>
+            <td>226.21</td>
+        </tr>
+    </tbody>
+</table>
+
+### Gráfico:
+
+<img src="src/grafico3.png" width="600" /> 
+
+
+## Búsqueda por rango
+
+<img src="src/tabla1.png" width="600" /> 
+
+### Gráfico:
+
+<img src="src/grafico4.png" width="600" /> 
+
+# Análisis y discusión
+Las librerías de `face_recognition` y `rtree` contienen herramientas para trabajar el reconocimiento de rostros e indexación por `rtree`, los cuales son muy eficientes en las operaciones que realizan, y nos permiten adaptarlos a nuestros proyectos de acuerdo con nuestra necesidad.
+
+Por otro lado, los experimentos realizados demuestran que las consultas con el indexamiento en Rtree son mucho más eficientes que las realizadas secuencialmente, es decir, la maldición de la dimensionalidad no nos afecta en comparación con las implementaciones secuenciales. 
+Finalmente, se logró implementar un motor de búsqueda que retorna a las personas más parecidas de nuestra base de datos respecto a alguna query insertada.
+
 
