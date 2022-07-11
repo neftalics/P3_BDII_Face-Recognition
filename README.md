@@ -29,7 +29,7 @@
   * [Búsqueda KNN](#búsqueda-KNN)
   * [Búsqueda por rango](#búsqueda-por-rango)
 * [Análisis y discusión](#análisis-y-discusión)
-* [Pruebas y video del proyecto](#pruebas)
+* [Presentacion](#Demo)
 
 # Introducción
 El reconocimiento de rostros es una tecnología que pertenece al campo de visión del computador. Su investigación radica no solo en reconocer cuando una imagen contiene algún rostro, sino también a reconocer la identidad del rostro encontrado. En este proyecto utilizaremos librerías relacionadas con procesamiento de imágenes e indexamiento para crear un pequeño motor de búsqueda de rostros.
@@ -186,5 +186,10 @@ Las librerías de `face_recognition` y `rtree` contienen herramientas para traba
 
 Por otro lado, los experimentos realizados demuestran que las consultas con el indexamiento en Rtree son mucho más eficientes que las realizadas secuencialmente, es decir, la maldición de la dimensionalidad no nos afecta en comparación con las implementaciones secuenciales. 
 Finalmente, se logró implementar un motor de búsqueda que retorna a las personas más parecidas de nuestra base de datos respecto a alguna query insertada.
+
+# Demo
+Link al video subido a github:
+
+
 
 
