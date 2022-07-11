@@ -85,13 +85,10 @@ En el front end encontramos dos páginas, una para la búsqueda de la imagen y l
 ## HTML y CSS
 Se utilizó para las estructuras básicas de las páginas y los envíos de las querys. Además, dentro de la estructura encontramos el llamado a las funciones de Python que realizan la consulta y devuelven el resultado.
 
-<img src="src/front/1.png" width="700" /> 
-
 
 ## Bootstrap
 Se utilizó para las cards en las que se muestran los resultados, por lo que forma parte de la estetica de la página.
-<img src="src/front/2.png" width="700" /> 
-<img src="src/front/3.png" width="700" /> 
+ 
 
 ## Javascript
 Se utilizó para la previsualización de la imagen al momento de elegir una para realizar la consulta. En otras palabras, que la imagen elegida se muestra en la pantalla principal.
