@@ -73,11 +73,30 @@ La búsqueda KNN utiliza un priority queue y retorna los K vecinos más cercanos
 La búsqueda por rango en el RTree requiere de dos puntos que representan un MBR, y retorna los puntos que se encuentren en él. Para adaptarlo a nuestra implementación, debemos crear este MBR a partir del vector característico de búsqueda, sumando y restando el radio a sus 128 dimensiones. Luego, cuando retorne los resultados, debemos descartar los que se encuentren fuera del radio de cobertura, además de ordenarlo por distancia ya que no los trae ordenados.
 
 <p float="left">
-  <img src="src/graf/2.png" width="342" />
+  <img src="src/graf/2.png" width="300" />
   <img src="src/graf/21.png" width="300" /> 
 </p>
 
 La búsqueda KNN en el RTree funciona como se espera, por lo que no es necesario realizar alguna modificación como con la búsqueda por rango.
 
+# Frontend
+En el front end encontramos dos páginas, una para la búsqueda de la imagen y la otra que muestra los resultados acorde a la query enviada.
+
+## HTML y CSS
+Se utilizó para las estructuras básicas de las páginas y los envíos de las querys. Además, dentro de la estructura encontramos el llamado a las funciones de Python que realizan la consulta y devuelven el resultado.
+
+<img src="src/front/1.png" width="700" /> 
+
+
+## Bootstrap
+Se utilizó para las cards en las que se muestran los resultados, por lo que forma parte de la estetica de la página.
+<img src="src/front/2.png" width="700" /> 
+<img src="src/front/3.png" width="700" /> 
+
+## Javascript
+Se utilizó para la previsualización de la imagen al momento de elegir una para realizar la consulta. En otras palabras, que la imagen elegida se muestra en la pantalla principal.
+
+# Experimentación
+Para testear las implementaciones, se usa una imagen de Steve Jobs como query. Instanciamos la clase Comparator con la cantidad de imágenes que deseamos procesar. Mientras más bajo sea el número de imágenes, menos parecidas serán las fotos. Por ejemplo, para 100 imágenes, los resultados son los siguientes:
 
 
