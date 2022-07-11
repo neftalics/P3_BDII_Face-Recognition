@@ -101,13 +101,13 @@ Para testear las implementaciones, se usa una imagen de Steve Jobs como query. I
 
 Steve Jobs           |  Bob_Huggins_0001.jpg | Paul_Wolfowitz_0003.jpg | Rick_Wagoner_0002.jpg 
 :-------------------------:|:-------------------------: |:-------------------------: |:-------------------------:
-<img src="src/steve_jobs.png" width="300" /> |  <img src="src/Bob_Huggins_0001.png" width="300" />  | <img src="src/Paul_Wolfowitz_0003.png" width="250" /> | <img src="src/Rick_Wagoner_0002.png" width="220" />
+<img src="src/rec/steve_jobs.png" width="300" /> |  <img src="src/rec/Bob_Huggins_0001.png" width="300" />  | <img src="src/rec/Paul_Wolfowitz_0003.png" width="250" /> | <img src="src/rec/Rick_Wagoner_0002.png" width="220" />
 
 Mientras que, para la totalidad de datos (13174), los resultados son:
 
 Steve Jobs           |  John_Sununu_0001.jpg | Bob_Beauprez_0001.jpg | George_W_Bush_0071.jpg
 :-------------------------:|:-------------------------: |:-------------------------: |:-------------------------:
-<img src="src/steve_jobs.png" width="300" /> |  <img src="src/John_Sununu_0001.png" width="300" />  | <img src="src/Bob_Beauprez_000.png" width="250" /> | <img src="src/George_W_Bush_0071.png" width="220" />
+<img src="src/rec/steve_jobs.png" width="300" /> |  <img src="src/rec/John_Sununu_0001.png" width="300" />  | <img src="src/rec/Bob_Beauprez_000.png" width="250" /> | <img src="src/rec/George_W_Bush_0071.png" width="220" />
 
 ## Búsqueda KNN
 
@@ -170,16 +170,16 @@ Steve Jobs           |  John_Sununu_0001.jpg | Bob_Beauprez_0001.jpg | George_W_
 
 ### Gráfico:
 
-<img src="src/grafico3.png" width="600" /> 
+<img src="src/graf/3.png" width="600" /> 
 
 
 ## Búsqueda por rango
 
-<img src="src/tabla1.png" width="600" /> 
+<img src="src/table/1.png" width="600" /> 
 
 ### Gráfico:
 
-<img src="src/grafico4.png" width="600" /> 
+<img src="src/graf/4.png" width="600" /> 
 
 # Análisis y discusión
 Las librerías de `face_recognition` y `rtree` contienen herramientas para trabajar el reconocimiento de rostros e indexación por `rtree`, los cuales son muy eficientes en las operaciones que realizan, y nos permiten adaptarlos a nuestros proyectos de acuerdo con nuestra necesidad.
